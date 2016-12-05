@@ -61,10 +61,14 @@ textarea {
     }
   }
 
-  table {
-    border: 1px solid pink;
-    thead {
-      border-bottom: 1px dotted pink;
-    }
-  }
+
+}
+
+td, th {
+  border: 1px dotted pink;
+  padding: .3rem;
+}
+
+table{
+  border-collapse: collapse;
 }
