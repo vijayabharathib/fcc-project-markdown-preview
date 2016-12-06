@@ -3,55 +3,68 @@
   * why: prominant display for the user
   */
 .brand {
-  font-size: 3em;
+  font-size: 2em;
   margin-top: 0; //reset h2
   text-align: center;
   text-shadow: 0 -1px $color-black-transparent-70,
   0 -2px $color-black-transparent-70; //embedded effect
+  @media(min-width: 599px){
+    font-size: 3em;
+  }
 }
 
 textarea {
-  width: 49%;
-  height: 80vh;
-  float: left;
+  width: 100%;
+  height: 60vh;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 5px;
-  background: #ccc;
+  background: $color-white-transparent-70;
+  line-height: 1.6em;
+  color: $color-font-dark;
+  font-size: 1em;
+  @media(min-width: 599px){
+    float: left;
+    width: 49%;
+    height: 80vh;
+  }
 }
 
 #preview {
-  border: 1px solid white;
-  height: 80vh;
+  border: 1px solid $color-white-transparent-70;
+  height: 60vh;
+  width: 100%;
   overflow: auto;
   margin-left: auto;
-  width: 49%;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 5px;
-
+  @media(min-width: 599px){
+    width: 49%;
+    height: 80vh;
+  }
   a {
-    color: white;
+    color: $color-white;
     &:hover{
       text-decoration: none;
     }
   }
 
   code {
-    border: 1px solid gray;
-    background: #333;
+    border: 1px solid $color-white-transparent-30;
+    background: $color-white-transparent-70;
     padding: 2px;
-    color: pink;
+    color: $color-background;
     font-size: .7em;
     border-radius: 1px;
   }
 
   pre {
-    background: #ccc;
+    border: 1px solid $color-white-transparent-30;
+    background: $color-white-transparent-70;
     padding: 5px;
     color: $color-background;
     border-radius: 3px;
-    box-shadow: inset 0 1px 6px 3px $color-black-transparent-30;
     code {
       border: none;
       background: none;
@@ -65,7 +78,7 @@ textarea {
 }
 
 td, th {
-  border: 1px dotted pink;
+  border: 1px dotted $color-white-transparent-70;
   padding: .3rem;
 }
 

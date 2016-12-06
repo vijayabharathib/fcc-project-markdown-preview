@@ -1,56 +1,11 @@
-/**
- * google-material-color v1.2.6
- * https://github.com/danlevan/google-material-color
- */
-/*
-$color-material-red-500        : #F44336;
-$color-material-pink-500       : #E91E63;
-$color-material-purple-500     : #9C27B0;
-$color-material-deep-purple-500: #673AB7;
-$color-material-indigo-500     : #3F51B5;
-$color-material-blue-500       : #2196F3;
-$color-material-light-blue-500 : #03A9F4;
-$color-material-cyan-500       : #00BCD4;
-$color-material-teal-500       : #009688;
-$color-material-green-500      : #4CAF50;
-$color-material-light-green-500: #8BC34A;
-$color-material-lime-500       : #CDDC39;
-$color-material-yellow-500     : #FFEB3B;
-$color-material-amber-500      : #FFC107;
-$color-material-orange-500     : #FF9800;
-$color-material-deep-orange-500: #FF5722;
-$color-material-brown-500      : #795548;
-$color-material-grey-500       : #9E9E9E;
-$color-material-blue-grey-500  : #607D8B;
-
-$color-material-red-300        : #E57373;
-$color-material-pink-300       : #F06292;
-$color-material-purple-300     : #BA68C8;
-$color-material-deep-purple-300: #9575CD;
-$color-material-indigo-300     : #7986CB;
-$color-material-blue-300       : #64B5F6;
-$color-material-light-blue-300 : #4FC3F7;
-$color-material-cyan-300       : #4DD0E1;
-$color-material-teal-300       : #4DB6AC;
-$color-material-green-300      : #81C784;
-$color-material-light-green-300: #AED581;
-$color-material-lime-300       : #DCE775;
-$color-material-yellow-300     : #FFF176;
-$color-material-amber-300      : #FFD54F;
-$color-material-orange-300     : #FFB74D;
-$color-material-deep-orange-300: #FF8A65;
-$color-material-brown-300      : #A1887F;
-$color-material-grey-300       : #E0E0E0;
-$color-material-blue-grey-300  : #90A4AE;
-*/
 html {
   height: 100%; }
 
 body {
   min-height: 100%;
   margin: 0;
-  background: #263238;
-  color: #44c8e5;
+  background: #006064;
+  color: #80DEEA;
   font-size: 16px; }
   @media (min-width: 321px) {
     body {
@@ -77,46 +32,60 @@ h4 {
   * why: prominant display for the user
   */
 .brand {
-  font-size: 3em;
+  font-size: 2em;
   margin-top: 0;
   text-align: center;
   text-shadow: 0 -1px rgba(0, 0, 0, 0.7), 0 -2px rgba(0, 0, 0, 0.7); }
+  @media (min-width: 599px) {
+    .brand {
+      font-size: 3em; } }
 
 textarea {
-  width: 49%;
-  height: 80vh;
-  float: left;
+  width: 100%;
+  height: 60vh;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 5px;
-  background: #ccc; }
+  background: rgba(255, 255, 255, 0.7);
+  line-height: 1.6em;
+  color: #002f31;
+  font-size: 1em; }
+  @media (min-width: 599px) {
+    textarea {
+      float: left;
+      width: 49%;
+      height: 80vh; } }
 
 #preview {
-  border: 1px solid white;
-  height: 80vh;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  height: 60vh;
+  width: 100%;
   overflow: auto;
   margin-left: auto;
-  width: 49%;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 5px; }
+  @media (min-width: 599px) {
+    #preview {
+      width: 49%;
+      height: 80vh; } }
   #preview a {
-    color: white; }
+    color: #fff; }
     #preview a:hover {
       text-decoration: none; }
   #preview code {
-    border: 1px solid gray;
-    background: #333;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.7);
     padding: 2px;
-    color: pink;
+    color: #006064;
     font-size: .7em;
     border-radius: 1px; }
   #preview pre {
-    background: #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.7);
     padding: 5px;
-    color: #263238;
-    border-radius: 3px;
-    box-shadow: inset 0 1px 6px 3px rgba(0, 0, 0, 0.3); }
+    color: #006064;
+    border-radius: 3px; }
     #preview pre code {
       border: none;
       background: none;
@@ -125,7 +94,7 @@ textarea {
       font-size: inherit; }
 
 td, th {
-  border: 1px dotted pink;
+  border: 1px dotted rgba(255, 255, 255, 0.7);
   padding: .3rem; }
 
 table {
